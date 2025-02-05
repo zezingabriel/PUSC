@@ -76,6 +76,7 @@ nav ul li a:hover{
     height: 600px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .video-fundo{
