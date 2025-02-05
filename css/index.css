@@ -72,10 +72,12 @@ nav ul li a:hover{
 }
 
 .container {
+    background-color: red;
     width: 1200px;
     height: 600px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .video-fundo{
