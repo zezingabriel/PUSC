@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/den.css">
+    <script src="js/den.js"></script>
+    <title>PUSC</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_dentro">
+          <div class="logo_container"> 
+            <h1><a href="index.html">PUSC</a></h1>
+          </div>
+          <ul class="navegar">
+            <a href="quemsomos.html"><li>Nossa Ideia</li></a>
+            <a href="pets.html"><li>Pets</li></a>
+            <a href="shop.html"><li>Petshops</li></a>
+            <a href="prof.html"><li>Bem-Estar Animal</li></a>
+            <a href="den.html"><li>Denúncias</li></a>
+            <a href="cad.html"><li>Cadastro</li></a>
+          </ul>
+        </div>
+      </div>
+      
+      <header>
+      <h1>Denuncie agora!</h1>
+      <p>Preencha o formulário a baixo para efetuar a denúncia</p>
+      </header>
+
+      <section id="form-section">
+        <form id="denunciaForm">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="email" required>
+
+            <label for="email">Seu e-mail:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="local">Onde foi:</label>
+            <input type="text" id="local" name="local" required>
+
+            <label for="descricao">Descreva o ocorrido:</label>
+            <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="mensagem-sucesso" class="oculto">Denúncia enviada com sucesso!</div>
+      </section>
+</body>
+</html>

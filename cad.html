@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cad.css">
+    <script src="js/cad.js"></script>
+    <title>PUSC</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="login-form">
+            <h2>Login</h2>
+            <form>
+                <label for="login-username">Usuário</label>
+                <input type="text" id="login-username" required>
+                
+                <label for="login-password">Senha</label>
+                <input type="password" id="login-password" required>
+                
+                <button type="button" onclick="login()">Entrar</button>
+            </form>
+            <p>Não tem uma conta? <a href="#" onclick="toggleForms()">Cadastre-se aqui</a></p>
+        </div>
+        <div class="form-container" id="signup-form" style="display: none;">
+            <h2>Cadastro</h2>
+            <form>
+                <label for="signup-username">Usuário</label>
+                <input type="text" id="signup-username" required>
+                
+                <label for="signup-password">Senha</label>
+                <input type="password" id="signup-password" required>
+                
+                <button type="button" onclick="signup()">Cadastrar</button>
+            </form>
+            <p>Já tem uma conta? <a href="#" onclick="toggleForms()">Faça login aqui</a></p>
+        </div>
+    </div>
+</body>
+</html>

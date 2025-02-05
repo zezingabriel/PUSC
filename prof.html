@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/prof.css">
+    <script src="js/prof.js"></script>
+    <title>Dog Walker</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_dentro">
+          <div class="logo_container"> 
+            <h1><a href="index.html">PUSC</a></h1>
+          </div>
+          <ul class="navegar">
+            <a href="quemsomos.html"><li>Nossa Ideia</li></a>
+            <a href="pets.html"><li>Pets</li></a>
+            <a href="shop.html"><li>Petshops</li></a>
+            <a href="prof.html"><li>Bem-Estar Animal</li></a>
+            <a href="den.html"><li>Denúncias</li></a>
+            <a href="cad.html"><li>Cadastro</li></a>
+          </ul>
+        </div>
+      </div>
+      <header>
+        <h1>Encontre Passeadores para o seu Cão</h1>
+      </header>
+    
+      <main>
+        <section id="search">
+          <label for="location">Insira sua localização:</label>
+          <input type="text" id="location" placeholder="Digite sua cidade">
+          <button onclick="buscarProfissionais()">Buscar</button>
+        </section>
+    
+        <section id="professionals">
+          <h2>Profissionais Próximos</h2>
+          <div id="professional-list"></div>
+        </section>
+    
+        <!-- Seção para o chat -->
+        <section id="chat-section" style="display: none;">
+          <h2>Chat com <span id="professional-name"></span></h2>
+          <div id="chat-box">
+            <div id="messages"></div>
+          </div>
+          <input type="text" id="message-input" placeholder="Digite sua mensagem">
+          <button onclick="enviarMensagem()">Enviar</button>
+          <button onclick="fecharChat()">Fechar Chat</button>
+        </section>
+    
+        <!-- Link para página de cadastro -->
+        <section id="register-link">
+          <h2>Quer se cadastrar como profissional?</h2>
+          <a href="register.html" class="register-button">Cadastre-se aqui</a>
+        </section>
+      </main>
+</body>
+</html>

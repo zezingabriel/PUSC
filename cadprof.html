@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadprof.css">
+    <script src="js/cadprof.js"></script>
+    <title>Dog Walker</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_dentro">
+          <div class="logo_container"> 
+            <h1><a href="index.html">PUSC</a></h1>
+          </div>
+          <ul class="navegar">
+            <a href="quemsomos.html"><li>Nossa Ideia</li></a>
+            <a href="pets.html"><li>Pets</li></a>
+            <a href="shop.html"><li>Petshops</li></a>
+            <a href="prof.html"><li>Bem-Estar Animal</li></a>
+            <a href="den.html"><li>Denúncias</li></a>
+            <a href="cad.html"><li>Cadastro</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <header>
+        <h1>Cadastro de Profissional de Passeio de Cães</h1>
+        <a href="index.html" class="back-link">Voltar para a Página Principal</a>
+      </header>
+    
+      <main>
+        <section id="register">
+          <form id="registration-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+    
+            <label for="location">Localização:</label>
+            <input type="text" id="location" placeholder="Digite sua cidade" required>
+    
+            <label for="price">Preço por passeio (mínimo R$50,00):</label>
+            <input type="number" id="price" min="50" required>
+    
+            <label for="photo">Foto do Perfil (URL opcional):</label>
+            <input type="url" id="photo" placeholder="URL da foto">
+    
+            <button type="button" onclick="cadastrarProfissional()">Cadastrar</button>
+          </form>
+        </section>
+      </main>
+
+    </body>
+</html>
